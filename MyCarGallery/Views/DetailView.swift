@@ -7,12 +7,40 @@
 
 import SwiftUI
 
+
+
 struct DetailView: View {
+    
+    var carModel: CarModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.black.opacity(0.7)
+            VStack {
+                Text(carModel.name.uppercased())
+                    .foregroundColor(Color.white.opacity(0.5))
+                    .font(.custom("Verdana", size: 24))
+                Image(carModel.image)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+             
+                    Text(carModel.description)
+                        .foregroundColor(Color.white.opacity(0.75))
+                        .multilineTextAlignment(.trailing)
+                        .frame(width: 380)
+                        .padding(.horizontal, 10)
+                
+            }
+        }.ignoresSafeArea()
     }
 }
 
-#Preview {
-    DetailView()
+struct DetailView_Previews: PreviewProvider {
+    
+    
+    
+    static var previews: some View {
+        DetailView(carModel: CarModel(name: "Tiguan", image: "tiguan-image", description: "DESCRIPTION"))
+    }
 }

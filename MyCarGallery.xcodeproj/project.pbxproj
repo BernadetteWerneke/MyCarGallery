@@ -11,6 +11,15 @@
 		4B0897442B29E6B70020A6AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0897432B29E6B70020A6AC /* ContentView.swift */; };
 		4B0897462B29E6B80020A6AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0897452B29E6B80020A6AC /* Assets.xcassets */; };
 		4B0897492B29E6B80020A6AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0897482B29E6B80020A6AC /* Preview Assets.xcassets */; };
+		4B0897532B29E7270020A6AC /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0897522B29E7270020A6AC /* Manufacturer.swift */; };
+		4B0897552B29E7410020A6AC /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0897542B29E7410020A6AC /* CarModel.swift */; };
+		4B0897572B29E7790020A6AC /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0897562B29E7790020A6AC /* CarViewModel.swift */; };
+		4B0897592B29E7B10020A6AC /* ManufacturerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0897582B29E7B10020A6AC /* ManufacturerView.swift */; };
+		4B08975B2B29E7C10020A6AC /* ManufacturerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B08975A2B29E7C10020A6AC /* ManufacturerCard.swift */; };
+		4B08975D2B29E7D00020A6AC /* CarModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B08975C2B29E7D00020A6AC /* CarModelView.swift */; };
+		4B08975F2B29E7E50020A6AC /* CarModelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B08975E2B29E7E50020A6AC /* CarModelCard.swift */; };
+		4B0897612B29E7F90020A6AC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0897602B29E7F90020A6AC /* DetailView.swift */; };
+		4B0897632B29E8080020A6AC /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0897622B29E8080020A6AC /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		4B0897432B29E6B70020A6AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B0897452B29E6B80020A6AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B0897482B29E6B80020A6AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B0897522B29E7270020A6AC /* Manufacturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manufacturer.swift; sourceTree = "<group>"; };
+		4B0897542B29E7410020A6AC /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		4B0897562B29E7790020A6AC /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
+		4B0897582B29E7B10020A6AC /* ManufacturerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturerView.swift; sourceTree = "<group>"; };
+		4B08975A2B29E7C10020A6AC /* ManufacturerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturerCard.swift; sourceTree = "<group>"; };
+		4B08975C2B29E7D00020A6AC /* CarModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelView.swift; sourceTree = "<group>"; };
+		4B08975E2B29E7E50020A6AC /* CarModelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelCard.swift; sourceTree = "<group>"; };
+		4B0897602B29E7F90020A6AC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		4B0897622B29E8080020A6AC /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +69,10 @@
 		4B0897402B29E6B70020A6AC /* MyCarGallery */ = {
 			isa = PBXGroup;
 			children = (
+				4B0897512B29E7100020A6AC /* ViewModel */,
+				4B0897502B29E7020020A6AC /* Views */,
+				4B08974F2B29E6FA0020A6AC /* Model */,
 				4B0897412B29E6B70020A6AC /* MyCarGalleryApp.swift */,
-				4B0897432B29E6B70020A6AC /* ContentView.swift */,
 				4B0897452B29E6B80020A6AC /* Assets.xcassets */,
 				4B0897472B29E6B80020A6AC /* Preview Content */,
 			);
@@ -65,6 +85,37 @@
 				4B0897482B29E6B80020A6AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B08974F2B29E6FA0020A6AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B0897522B29E7270020A6AC /* Manufacturer.swift */,
+				4B0897542B29E7410020A6AC /* CarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B0897502B29E7020020A6AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B0897432B29E6B70020A6AC /* ContentView.swift */,
+				4B0897582B29E7B10020A6AC /* ManufacturerView.swift */,
+				4B08975A2B29E7C10020A6AC /* ManufacturerCard.swift */,
+				4B08975C2B29E7D00020A6AC /* CarModelView.swift */,
+				4B08975E2B29E7E50020A6AC /* CarModelCard.swift */,
+				4B0897602B29E7F90020A6AC /* DetailView.swift */,
+				4B0897622B29E8080020A6AC /* AddView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B0897512B29E7100020A6AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B0897562B29E7790020A6AC /* CarViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +188,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B0897552B29E7410020A6AC /* CarModel.swift in Sources */,
+				4B08975F2B29E7E50020A6AC /* CarModelCard.swift in Sources */,
+				4B0897592B29E7B10020A6AC /* ManufacturerView.swift in Sources */,
+				4B0897612B29E7F90020A6AC /* DetailView.swift in Sources */,
 				4B0897442B29E6B70020A6AC /* ContentView.swift in Sources */,
+				4B0897572B29E7790020A6AC /* CarViewModel.swift in Sources */,
+				4B0897632B29E8080020A6AC /* AddView.swift in Sources */,
 				4B0897422B29E6B70020A6AC /* MyCarGalleryApp.swift in Sources */,
+				4B0897532B29E7270020A6AC /* Manufacturer.swift in Sources */,
+				4B08975B2B29E7C10020A6AC /* ManufacturerCard.swift in Sources */,
+				4B08975D2B29E7D00020A6AC /* CarModelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct AddView: View {
+    
+    var deviceWidth = UIScreen.main.bounds.width
+    
+    @Binding var carModelName: String
+    @Binding var carModelImage: String
+    @Binding var carModelDesc: String
+    
+    var addAction: (CarModel) -> Void
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack(alignment: .top) {
+            Color.black.opacity(0.25)
+            VStack {
+                Button(action: {
+                    addAction(CarModel(name: carModelName, image: carModelImage, description: carModelDesc))
+                }){
+                    Image(systemName: "plus")
+                }
+                TextField("Model", text: $carModelName)
+                TextField("Image", text: $carModelImage)
+                TextField("Description", text: $carModelDesc)
+            }.padding(.leading, 3)
+        }.frame(width: (deviceWidth-50) / 2, height: 150)
+            .clipShape(RoundedRectangle(cornerRadius: 25))
     }
-}
-
-#Preview {
-    AddView()
 }

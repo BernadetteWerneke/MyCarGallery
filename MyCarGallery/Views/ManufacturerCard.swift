@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct ManufacturerCard: View {
+    
+    var manufacturer: Manufacturer
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(manufacturer.logo)
+            .resizable()
+            .scaledToFit()
+            .frame(width: 380)
+            .cornerRadius(30)
     }
 }
 
-#Preview {
-    ManufacturerCard()
+struct ManufacturerCard_Previews: PreviewProvider {
+    static var previews: some View {
+        ManufacturerCard(manufacturer: Manufacturer(name: "vw", logo: "vw-logo", carModels: []))
+    }
 }

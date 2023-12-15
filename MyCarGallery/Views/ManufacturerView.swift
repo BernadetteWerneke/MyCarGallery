@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct ManufacturerView: View {
+    
+    @StateObject var viewModel: CarViewModel = CarViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ZStack {
+                Color.black.opacity(0.7)
+                    .ignoresSafeArea()
+                ScrollView {
+                    VStack {
+                        ForEach(viewModel.manufactures) {
+                            manu in
+                            
+                            NavigationLink(destination: CarModelView(carModels: manu.carModels), label: {
+                                ManufacturerCard(manufacturer: manu)
+                            })
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-#Preview {
-    ManufacturerView()
+struct ManufacturerView_Previews: PreviewProvider {
+    static var previews: some View {
+        ManufacturerView()
+    }
 }

@@ -5,14 +5,11 @@
 //  Created by Bernadette Werneke on 13.12.23.
 //
 
-import SwiftUI
+import Foundation
 
-struct Manufacturer: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    Manufacturer()
+struct Manufacturer : Identifiable {
+    var id = UUID()
+    var name : String
+    var logo : String
+    var carModels : [CarModel]
 }
