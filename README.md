@@ -11,7 +11,13 @@ Im `CarGalleryViewModel` implementiere das ViewModel für die Car Gallery.
 Es soll eine Liste von Herstellern als Variable enthalten sein.
 Nutze `@Published`.
 
-Siehe Screenshots ganz unten (nur als Orientierung).
+## Screenshots (zur Orientierung)
+
+<img src="https://github.com/BernadetteWerneke/MyCarGallery/assets/120725476/be289e38-a6da-4105-a3b1-0864d6fb10f8" width="230">
+<img src="https://github.com/BernadetteWerneke/MyCarGallery/assets/120725476/f612650c-e7a1-4bcf-9684-05f3dffece77" width="230">
+<img src="https://github.com/BernadetteWerneke/MyCarGallery/assets/120725476/ecf86b63-c843-4455-9e46-6ff3aff3dbe9" width="230">
+<img src="https://github.com/BernadetteWerneke/MyCarGallery/assets/120725476/a5a9571b-0609-4d98-93f1-17b2f4401d45" width="230">
+
 
 
 ---
@@ -78,9 +84,4 @@ Die Ansicht verwendet einen "CarGalleryViewModel" StateObject zum Laden der Hers
 
 ---
 
-## Screenshots
 
- ![screenshot_1.png](README.dir/screenshot_1.png) 
- ![screenshot_2.png](README.dir/screenshot_2.png) 
- ![screenshot_3.png](README.dir/screenshot_3.png) 
- ![screenshot_4.png](README.dir/screenshot_4.png) 
