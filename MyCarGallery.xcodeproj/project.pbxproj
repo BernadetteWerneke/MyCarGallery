@@ -20,6 +20,7 @@
 		4B08975F2B29E7E50020A6AC /* CarModelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B08975E2B29E7E50020A6AC /* CarModelCard.swift */; };
 		4B0897612B29E7F90020A6AC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0897602B29E7F90020A6AC /* DetailView.swift */; };
 		4B0897632B29E8080020A6AC /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0897622B29E8080020A6AC /* AddView.swift */; };
+		4B64D1642B3623110077887D /* Splashscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64D1632B3623110077887D /* Splashscreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		4B08975E2B29E7E50020A6AC /* CarModelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelCard.swift; sourceTree = "<group>"; };
 		4B0897602B29E7F90020A6AC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4B0897622B29E8080020A6AC /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		4B64D1632B3623110077887D /* Splashscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splashscreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				4B08975E2B29E7E50020A6AC /* CarModelCard.swift */,
 				4B0897602B29E7F90020A6AC /* DetailView.swift */,
 				4B0897622B29E8080020A6AC /* AddView.swift */,
+				4B64D1632B3623110077887D /* Splashscreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				4B08975F2B29E7E50020A6AC /* CarModelCard.swift in Sources */,
 				4B0897592B29E7B10020A6AC /* ManufacturerView.swift in Sources */,
 				4B0897612B29E7F90020A6AC /* DetailView.swift in Sources */,
+				4B64D1642B3623110077887D /* Splashscreen.swift in Sources */,
 				4B0897442B29E6B70020A6AC /* ContentView.swift in Sources */,
 				4B0897572B29E7790020A6AC /* CarViewModel.swift in Sources */,
 				4B0897632B29E8080020A6AC /* AddView.swift in Sources */,
